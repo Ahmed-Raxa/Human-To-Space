@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — HumanToSpace Architecture Studio</title>
+  <meta name="description" content="Explore HumanToSpace's portfolio of architectural, interior, landscape, and conceptual projects across Pakistan." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- NAV OVERLAY -->
+<div class="nav-overlay"></div>
+<nav class="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">Studio</a>
+  <a href="contact.html">Contact</a>
+  <div class="mobile-nav-footer">
+    <p>office@humantospace.com</p>
+    <p>+92 301 8484123</p>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header id="header">
+  <a href="index.html" class="nav-logo">
+    <span class="logo-main">HumanToSpace</span>
+    <span class="logo-sub">Architecture Studio · Lahore</span>
+  </a>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">Studio</a>
+    <a href="contact.html" class="nav-cta">Get In Touch</a>
+  </nav>
+  <button class="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg">
+    <img src="images/proj-arch-2.png" alt="Projects" />
+  </div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content container">
+    <div class="eyebrow">Portfolio · Selected Work</div>
+    <h1>Our <em>Projects</em></h1>
+  </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section class="section">
+  <div class="container">
+
+    <!-- Intro -->
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:end; margin-bottom:3rem;" class="reveal">
+      <p style="font-size:1.05rem; color:var(--text-muted); line-height:1.9; max-width:480px;">
+        Each project is a dialogue between the built and the natural, the functional and the poetic. Browse our portfolio spanning architecture, interiors, landscape, and visionary concepts.
+      </p>
+      <div></div>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="filter-tabs reveal" id="filterBar">
+      <button class="filter-tab active" data-filter="all">All Work</button>
+      <button class="filter-tab" data-filter="architecture">Architecture</button>
+      <button class="filter-tab" data-filter="interior">Interior</button>
+      <button class="filter-tab" data-filter="landscape">Landscape</button>
+      <button class="filter-tab" data-filter="conceptual">Conceptual</button>
+    </div>
+
+    <!-- Grid -->
+    <div class="all-projects-grid" id="projectsGrid">
+
+      <!-- 1 – wide -->
+      <article class="all-proj-card wide reveal" data-category="architecture">
+        <div class="all-proj-card-img">
+          <img src="images/proj-arch-1.png" alt="Johar Villa Residence" />
+        </div>
+        <div class="all-proj-card-info">
+          <div class="all-proj-card-info-left">
+            <div class="cat">Architecture · 2024</div>
+            <h3>Johar Villa Residence</h3>
+          </div>
+          <div class="arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="all-proj-card reveal reveal-delay-1" data-category="interior">
+        <div class="all-proj-card-img">
+          <img src="images/proj-int-1.png" alt="Lumina Interior Suite" />
+        </div>
+        <div class="all-proj-card-info">
+          <div class="all-proj-card-info-left">
+            <div class="cat">Interior · 2024</div>
+            <h3>Lumina Interior Suite</h3>
+          </div>
+          <div class="arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="all-proj-card reveal reveal-delay-2" data-category="landscape">
+        <div class="all-proj-card-img">
+          <img src="images/proj-land-1.png" alt="Serenity Garden Estate" />
+        </div>
+        <div class="all-proj-card-info">
+          <div class="all-proj-card-info-left">
+            <div class="cat">Landscape · 2023</div>
+            <h3>Serenity Garden Estate</h3>
+          </div>
+          <div class="arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4 – wide -->
+      <article class="all-proj-card wide reveal" data-category="conceptual">
+        <div class="all-proj-card-img">
+          <img src="images/proj-concept-1.png" alt="Horizon Tower Concept" />
+        </div>
+        <div class="all-proj-card-info">
+          <div class="all-proj-card-info-left">
+            <div class="cat">Conceptual · 2025 Vision</div>
+            <h3>Horizon Tower Concept</h3>
+          </div>
+          <div class="arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="all-proj-card reveal reveal-delay-1" data-category="architecture">
+        <div class="all-proj-card-img">
+          <img src="images/proj-arch-2.png" alt="Askari Commercial Plaza" />
+        </div>
+        <div class="all-proj-card-info">
+          <div class="all-proj-card-info-left">
+            <div class="cat">Architecture · 2023</div>
+            <h3>Askari Commercial Plaza</h3>
+          </div>
+          <div class="arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="all-proj-card reveal reveal-delay-2" data-category="interior">
+        <div class="all-proj-card-img">
+          <img src="images/proj-int-2.png" alt="Nocturne Master Suite" />
+        </div>
+        <div class="all-proj-card-info">
+          <div class="all-proj-card-info-left">
+            <div class="cat">Interior · 2024</div>
+            <h3>Nocturne Master Suite</h3>
+          </div>
+          <div class="arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-grid-bg"></div>
+  <div class="section-label center reveal"><span>Commission a Project</span></div>
+  <h2 class="reveal reveal-delay-1">Ready to <em>begin</em><br />your project?</h2>
+  <p class="reveal reveal-delay-2">Share your vision with us and our team will guide you from concept to completion.</p>
+  <a href="contact.html" class="btn btn-primary btn-arrow reveal reveal-delay-3">
+    Talk to Us
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo-main">HumanToSpace</span>
+        <span class="logo-sub">Architecture Studio</span>
+        <p>A Lahore-based architecture and design studio dedicated to shaping spaces where human life flourishes.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social" aria-label="Instagram">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg>
+          </a>
+          <a href="#" class="footer-social" aria-label="LinkedIn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">Studio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Disciplines</h5>
+        <ul>
+          <li><a href="projects.html">Architecture</a></li>
+          <li><a href="projects.html">Interior Design</a></li>
+          <li><a href="projects.html">Landscape</a></li>
+          <li><a href="projects.html">Conceptual</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Get In Touch</h5>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Johar Town, Lahore, Pakistan</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>office@humantospace.com</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 <a href="index.html">HumanToSpace</a>. All rights reserved.</p>
+      <p style="color:var(--text-dim); font-size:0.75rem;">Johar Town · Lahore · Pakistan</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Journal — HumanToSpace Architecture</title>
+  <meta name="description" content="Insights, ideas, and perspectives from HumanToSpace — a Lahore-based architecture and design studio. Explore architecture, interior, landscape, and conceptual design thinking." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/blog.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛</text></svg>" />
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-logo">HumanToSpace</div>
+  <div class="loader-line"></div>
+</div>
+
+<!-- READING PROGRESS -->
+<div class="reading-progress" id="readingProgress"></div>
+
+<!-- NAV OVERLAY -->
+<div class="nav-overlay"></div>
+
+<!-- MOBILE NAV -->
+<nav class="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">Studio</a>
+  <a href="blog.html" class="active">Journal</a>
+  <a href="contact.html">Contact</a>
+  <div class="mobile-nav-footer">
+    <p>office@humantospace.com</p>
+    <p>+92 301 8484123</p>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header id="header">
+  <a href="index.html" class="nav-logo">
+    <span class="logo-main">HumanToSpace</span>
+    <span class="logo-sub">Architecture Studio · Lahore</span>
+  </a>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">Studio</a>
+    <a href="blog.html" class="active">Journal</a>
+    <a href="contact.html" class="nav-cta">Get In Touch</a>
+  </nav>
+  <button class="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ================================================
+     BLOG HERO — FEATURED ARTICLE
+     ================================================ -->
+<section class="blog-hero" id="blogHero">
+  <div class="blog-hero-bg">
+    <img src="images/blog-hero.png" alt="Architecture — Light &amp; Space" loading="eager" />
+  </div>
+  <div class="blog-hero-overlay"></div>
+
+  <div class="blog-hero-content container">
+    <div class="blog-hero-meta reveal">
+      <span class="blog-tag-pill">Architecture</span>
+      <span class="blog-hero-date">April 5, 2025</span>
+      <span class="blog-hero-read">8 min read</span>
+    </div>
+    <h1 class="blog-hero-title reveal reveal-delay-1">
+      The Grammar of Light:<br /><em>How Shadow Defines Architecture</em>
+    </h1>
+    <p class="blog-hero-excerpt reveal reveal-delay-2">
+      In Lahore's intensely sun-drenched climate, light is not an afterthought — it is the primary building material. We explore how HumanToSpace uses orientation, void, and surface to sculpt spaces that breathe with the arc of the sun.
+    </p>
+    <div class="blog-hero-author reveal reveal-delay-3">
+      <div class="blog-author-avatar">MZ</div>
+      <div>
+        <span class="blog-author-name">Muhammad Zubair</span>
+        <span class="blog-author-role">Founder · Architect</span>
+      </div>
+      <a href="#featured-article" class="btn btn-primary btn-arrow" style="margin-left:auto;">
+        Read Article
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Featured article number badge -->
+  <div class="blog-hero-badge">
+    <span class="badge-num">01</span>
+    <span class="badge-label">Featured Essay</span>
+  </div>
+</section>
+
+<!-- ================================================
+     CATEGORY FILTER TABS
+     ================================================ -->
+<div class="blog-filter-bar" id="journalIndex">
+  <div class="container">
+    <div class="blog-filter-inner">
+      <div class="blog-filter-label">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+        Filter
+      </div>
+      <div class="blog-filter-tabs" id="blogFilterTabs">
+        <button class="blog-filter-tab active" data-filter="all">All Articles</button>
+        <button class="blog-filter-tab" data-filter="architecture">Architecture</button>
+        <button class="blog-filter-tab" data-filter="interior">Interior</button>
+        <button class="blog-filter-tab" data-filter="landscape">Landscape</button>
+        <button class="blog-filter-tab" data-filter="conceptual">Conceptual</button>
+        <button class="blog-filter-tab" data-filter="studio">Studio Notes</button>
+      </div>
+      <div class="blog-search-wrap">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input id="blogSearch" type="text" placeholder="Search articles…" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================================================
+     MAIN JOURNAL GRID + SIDEBAR
+     ================================================ -->
+<main class="blog-main section" id="featured-article">
+  <div class="container">
+    <div class="blog-layout">
+
+      <!-- ---- LEFT: ARTICLE GRID ---- -->
+      <div class="blog-grid-col">
+
+        <!-- Article count -->
+        <div class="blog-count-row reveal">
+          <span class="blog-count-text">Showing <strong id="articleCount">9</strong> articles</span>
+          <div class="blog-sort">
+            <label>Sort by</label>
+            <select id="blogSort">
+              <option>Latest</option>
+              <option>Most Read</option>
+              <option>Category</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- -------- EDITORIAL LARGE CARD — POST PANDEMIC -------- -->
+        <article class="blog-card blog-card--editorial reveal" data-category="conceptual" id="article-01">
+          <a href="post-pandemic-architecture.html" class="blog-card-img-wrap">
+            <img src="images/post-pandemic-hero.png" alt="Post Pandemic Architecture Space" />
+            <div class="blog-card-img-overlay"></div>
+            <span class="blog-card-category-pill conceptual">Conceptual</span>
+          </a>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <time class="blog-card-date">March 2021</time>
+              <span class="blog-card-dot">·</span>
+              <span class="blog-card-read">7 min read</span>
+              <span class="blog-card-dot">·</span>
+              <span class="blog-card-views">1.8k views</span>
+            </div>
+            <h2 class="blog-card-title">
+              <a href="post-pandemic-architecture.html">Post Pandemic Architecture Space</a>
+            </h2>
+            <p class="blog-card-excerpt">How the pandemic permanently reshaped the way we think about residential space — from third-space additions and hierarchy shifts to communal terraces and the rethinking of the street itself.</p>
+            <div class="blog-card-footer">
+              <div class="blog-card-author">
+                <div class="blog-author-avatar blog-author-avatar--sm">MZ</div>
+                <span>Muhammad Zubair</span>
+              </div>
+              <a href="post-pandemic-architecture.html" class="blog-read-link btn-ghost btn btn-arrow">
+                Read Article
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- -------- STANDARD CARD ROW (2-col) -------- -->
+        <div class="blog-card-row">
+
+          <article class="blog-card blog-card--standard reveal" data-category="interior" id="article-02">
+            <a href="#" class="blog-card-img-wrap">
+              <img src="images/proj-int-1.png" alt="Material Memory" />
+              <div class="blog-card-img-overlay"></div>
+              <span class="blog-card-category-pill interior">Interior</span>
+            </a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <time class="blog-card-date">March 22, 2025</time>
+                <span class="blog-card-dot">·</span>
+                <span class="blog-card-read">5 min read</span>
+              </div>
+              <h3 class="blog-card-title">
+                <a href="#">Material Memory — Why Texture Outlasts Trend</a>
+              </h3>
+              <p class="blog-card-excerpt">Natural stone, rammed earth, and hand-trowelled plaster carry the weight of time. We examine why tactile materials make interiors more emotionally resonant.</p>
+              <div class="blog-card-footer">
+                <div class="blog-card-author">
+                  <div class="blog-author-avatar blog-author-avatar--sm">ZA</div>
+                  <span>Zain ul Abidin</span>
+                </div>
+                <a href="#" class="blog-read-link btn-ghost btn btn-arrow">
+                  Read
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-card blog-card--standard reveal reveal-delay-1" data-category="landscape" id="article-03">
+            <a href="#" class="blog-card-img-wrap">
+              <img src="images/proj-land-1.png" alt="Green Infrastructure" />
+              <div class="blog-card-img-overlay"></div>
+              <span class="blog-card-category-pill landscape">Landscape</span>
+            </a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <time class="blog-card-date">March 10, 2025</time>
+                <span class="blog-card-dot">·</span>
+                <span class="blog-card-read">6 min read</span>
+              </div>
+              <h3 class="blog-card-title">
+                <a href="#">Green Infrastructure in Pakistani Urban Courtyards</a>
+              </h3>
+              <p class="blog-card-excerpt">The chowk — Lahore's traditional courtyard — is having a modern renaissance. How HumanToSpace is reinterpreting this ancient typology for contemporary living.</p>
+              <div class="blog-card-footer">
+                <div class="blog-card-author">
+                  <div class="blog-author-avatar blog-author-avatar--sm">MZ</div>
+                  <span>Muhammad Zubair</span>
+                </div>
+                <a href="#" class="blog-read-link btn-ghost btn btn-arrow">
+                  Read
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /.blog-card-row -->
+
+        <!-- -------- HORIZONTAL LIST CARD -------- -->
+        <article class="blog-card blog-card--horizontal reveal" data-category="conceptual" id="article-04">
+          <a href="#" class="blog-card-img-wrap">
+            <img src="images/proj-concept-1.png" alt="Future of Pakistani Architecture" />
+            <div class="blog-card-img-overlay"></div>
+            <span class="blog-card-category-pill conceptual">Conceptual</span>
+          </a>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <time class="blog-card-date">February 28, 2025</time>
+              <span class="blog-card-dot">·</span>
+              <span class="blog-card-read">10 min read</span>
+              <span class="blog-card-dot">·</span>
+              <span class="blog-card-views">3.7k views</span>
+            </div>
+            <h3 class="blog-card-title">
+              <a href="#">Pakistan in 2045: A Speculative Vision for South Asian Architecture</a>
+            </h3>
+            <p class="blog-card-excerpt">What if Pakistan's mega-cities were designed for climate resilience, cultural memory, and human-scale living? Our team sketches possible futures through speculative master planning and visionary urban design.</p>
+            <div class="blog-tag-row">
+              <span class="blog-inline-tag">Urban Design</span>
+              <span class="blog-inline-tag">Future Cities</span>
+              <span class="blog-inline-tag">Climate</span>
+            </div>
+            <div class="blog-card-footer">
+              <div class="blog-card-author">
+                <div class="blog-author-avatar blog-author-avatar--sm">BK</div>
+                <span>Bilal Mushtaq Khan</span>
+              </div>
+              <a href="#" class="blog-read-link btn-ghost btn btn-arrow">
+                Read Full Essay
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- -------- STANDARD CARD ROW (2-col) -------- -->
+        <div class="blog-card-row">
+
+          <article class="blog-card blog-card--standard reveal" data-category="architecture" id="article-05">
+            <a href="#" class="blog-card-img-wrap">
+              <img src="images/proj-arch-2.png" alt="Johar Villa Construction" />
+              <div class="blog-card-img-overlay"></div>
+              <span class="blog-card-category-pill architecture">Architecture</span>
+            </a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <time class="blog-card-date">February 14, 2025</time>
+                <span class="blog-card-dot">·</span>
+                <span class="blog-card-read">7 min read</span>
+              </div>
+              <h3 class="blog-card-title">
+                <a href="#">Behind the Build: Johar Villa From Sketch to Structure</a>
+              </h3>
+              <p class="blog-card-excerpt">A rare inside look at how one of our most celebrated residential projects evolved from a napkin sketch to a 4,200 sqft built reality over 18 months.</p>
+              <div class="blog-card-footer">
+                <div class="blog-card-author">
+                  <div class="blog-author-avatar blog-author-avatar--sm">WR</div>
+                  <span>M. Waqas Rafi</span>
+                </div>
+                <a href="#" class="blog-read-link btn-ghost btn btn-arrow">
+                  Read
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-card blog-card--standard reveal reveal-delay-1" data-category="studio" id="article-06">
+            <a href="#" class="blog-card-img-wrap">
+              <img src="images/about.png" alt="Studio Culture" />
+              <div class="blog-card-img-overlay"></div>
+              <span class="blog-card-category-pill studio">Studio Notes</span>
+            </a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <time class="blog-card-date">January 30, 2025</time>
+                <span class="blog-card-dot">·</span>
+                <span class="blog-card-read">4 min read</span>
+              </div>
+              <h3 class="blog-card-title">
+                <a href="#">Why We Sketched by Hand Through 2024</a>
+              </h3>
+              <p class="blog-card-excerpt">In an age of AI renderings and parametric software, our studio doubled down on analog sketching as the first step of every design. Here's why the hand still leads.</p>
+              <div class="blog-card-footer">
+                <div class="blog-card-author">
+                  <div class="blog-author-avatar blog-author-avatar--sm">MZ</div>
+                  <span>Muhammad Zubair</span>
+                </div>
+                <a href="#" class="blog-read-link btn-ghost btn btn-arrow">
+                  Read
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- -------- QUOTE DIVIDER -------- -->
+        <div class="blog-quote-divider reveal">
+          <blockquote>
+            "Architecture is the learned game, correct and magnificent, of forms assembled in the light."
+          </blockquote>
+          <cite>— Le Corbusier</cite>
+        </div>
+
+        <!-- -------- MORE ARTICLES -------- -->
+        <div class="blog-card-row">
+          <article class="blog-card blog-card--standard reveal" data-category="interior" id="article-07">
+            <a href="#" class="blog-card-img-wrap">
+              <img src="images/proj-int-2.png" alt="Colour in Architecture" />
+              <div class="blog-card-img-overlay"></div>
+              <span class="blog-card-category-pill interior">Interior</span>
+            </a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <time class="blog-card-date">January 18, 2025</time>
+                <span class="blog-card-dot">·</span>
+                <span class="blog-card-read">5 min read</span>
+              </div>
+              <h3 class="blog-card-title">
+                <a href="#">Colour Theory in Residential Interiors: The HTS Palette</a>
+              </h3>
+              <p class="blog-card-excerpt">A curated look at how we select tones, pigments, and finishes — and why the warmth of Lahori terracotta keeps finding its way into our interiors.</p>
+              <div class="blog-card-footer">
+                <div class="blog-card-author">
+                  <div class="blog-author-avatar blog-author-avatar--sm">AN</div>
+                  <span>Ali Naqi</span>
+                </div>
+                <a href="#" class="blog-read-link btn-ghost btn btn-arrow">
+                  Read
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-card blog-card--standard reveal reveal-delay-1" data-category="landscape" id="article-08">
+            <a href="#" class="blog-card-img-wrap">
+              <img src="images/services.png" alt="Native Planting" />
+              <div class="blog-card-img-overlay"></div>
+              <span class="blog-card-category-pill landscape">Landscape</span>
+            </a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <time class="blog-card-date">January 5, 2025</time>
+                <span class="blog-card-dot">·</span>
+                <span class="blog-card-read">6 min read</span>
+              </div>
+              <h3 class="blog-card-title">
+                <a href="#">Native Planting &amp; The Case Against Exotic Gardens</a>
+              </h3>
+              <p class="blog-card-excerpt">Why planting native species isn't just an ecological decision — it's a design one. The beauty and logic of indigenous flora in Lahore's landscape architecture.</p>
+              <div class="blog-card-footer">
+                <div class="blog-card-author">
+                  <div class="blog-author-avatar blog-author-avatar--sm">ZA</div>
+                  <span>Zain ul Abidin</span>
+                </div>
+                <a href="#" class="blog-read-link btn-ghost btn btn-arrow">
+                  Read
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- -------- STUDIO NOTES HORIZONTAL -------- -->
+        <article class="blog-card blog-card--horizontal reveal" data-category="studio" id="article-09">
+          <a href="#" class="blog-card-img-wrap">
+            <img src="images/hero.png" alt="Year in Review" />
+            <div class="blog-card-img-overlay"></div>
+            <span class="blog-card-category-pill studio">Studio Notes</span>
+          </a>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <time class="blog-card-date">December 28, 2024</time>
+              <span class="blog-card-dot">·</span>
+              <span class="blog-card-read">12 min read</span>
+              <span class="blog-card-dot">·</span>
+              <span class="blog-card-views">5.1k views</span>
+            </div>
+            <h3 class="blog-card-title">
+              <a href="#">HumanToSpace: Year in Review 2024</a>
+            </h3>
+            <p class="blog-card-excerpt">From the Johar Villa to the Horizon Tower Concept, 2024 was the year the studio found its definitive voice. A reflective dispatch on what we built, learned, and discarded.</p>
+            <div class="blog-tag-row">
+              <span class="blog-inline-tag">Annual Review</span>
+              <span class="blog-inline-tag">Studio Culture</span>
+              <span class="blog-inline-tag">Lessons</span>
+            </div>
+            <div class="blog-card-footer">
+              <div class="blog-card-author">
+                <div class="blog-author-avatar blog-author-avatar--sm">MZ</div>
+                <span>Muhammad Zubair</span>
+              </div>
+              <a href="#" class="blog-read-link btn-ghost btn btn-arrow">
+                Read Full Dispatch
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- NO RESULTS MESSAGE -->
+        <div class="blog-no-results" id="noResults" style="display:none;">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <h4>No articles found</h4>
+          <p>Try a different filter or search term.</p>
+        </div>
+
+        <!-- PAGINATION -->
+        <div class="blog-pagination reveal">
+          <button class="blog-page-btn blog-page-prev" disabled>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+            Previous
+          </button>
+          <div class="blog-page-nums">
+            <button class="blog-page-num active" aria-current="page">1</button>
+            <button class="blog-page-num">2</button>
+            <button class="blog-page-num">3</button>
+            <span class="blog-page-ellipsis">…</span>
+            <button class="blog-page-num">8</button>
+          </div>
+          <button class="blog-page-btn blog-page-next">
+            Next
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+
+      </div><!-- /.blog-grid-col -->
+
+      <!-- ---- RIGHT: SIDEBAR ---- -->
+      <aside class="blog-sidebar">
+
+        <!-- Newsletter signup -->
+        <div class="sidebar-widget sidebar-widget--newsletter reveal">
+          <div class="newsletter-accent-bar"></div>
+          <span class="sidebar-widget-label">Stay Updated</span>
+          <h3>The HTS <em>Journal</em></h3>
+          <p>Monthly essays on architecture, design thinking, and the future of the built environment — direct to your inbox.</p>
+          <form class="sidebar-newsletter-form" id="sidebarNewsletterForm">
+            <input type="email" placeholder="your@email.com" required />
+            <button type="submit" class="btn btn-primary">
+              Subscribe
+            </button>
+            <p class="newsletter-fine-print">No spam. Unsubscribe anytime.</p>
+          </form>
+        </div>
+
+        <!-- Popular this month -->
+        <div class="sidebar-widget reveal">
+          <span class="sidebar-widget-label">Popular</span>
+          <h4 class="sidebar-widget-title">Most Read</h4>
+          <ul class="sidebar-popular-list">
+            <li class="sidebar-popular-item">
+              <span class="popular-num">01</span>
+              <div>
+                <a href="#" class="popular-title">The Grammar of Light: How Shadow Defines Architecture</a>
+                <span class="popular-meta">Architecture · 2.4k views</span>
+              </div>
+            </li>
+            <li class="sidebar-popular-item">
+              <span class="popular-num">02</span>
+              <div>
+                <a href="#" class="popular-title">HumanToSpace: Year in Review 2024</a>
+                <span class="popular-meta">Studio Notes · 5.1k views</span>
+              </div>
+            </li>
+            <li class="sidebar-popular-item">
+              <span class="popular-num">03</span>
+              <div>
+                <a href="#" class="popular-title">Pakistan in 2045: A Speculative Vision</a>
+                <span class="popular-meta">Conceptual · 3.7k views</span>
+              </div>
+            </li>
+            <li class="sidebar-popular-item">
+              <span class="popular-num">04</span>
+              <div>
+                <a href="#" class="popular-title">Green Infrastructure in Pakistani Urban Courtyards</a>
+                <span class="popular-meta">Landscape · 2.1k views</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Categories with count -->
+        <div class="sidebar-widget reveal">
+          <span class="sidebar-widget-label">Browse</span>
+          <h4 class="sidebar-widget-title">Categories</h4>
+          <ul class="sidebar-categories">
+            <li>
+              <button class="sidebar-cat-btn" data-filter="all">
+                <span class="sidebar-cat-name">All Articles</span>
+                <span class="sidebar-cat-count">32</span>
+              </button>
+            </li>
+            <li>
+              <button class="sidebar-cat-btn" data-filter="architecture">
+                <span class="sidebar-cat-name">
+                  <span class="cat-dot architecture"></span>
+                  Architecture
+                </span>
+                <span class="sidebar-cat-count">12</span>
+              </button>
+            </li>
+            <li>
+              <button class="sidebar-cat-btn" data-filter="interior">
+                <span class="sidebar-cat-name">
+                  <span class="cat-dot interior"></span>
+                  Interior Design
+                </span>
+                <span class="sidebar-cat-count">8</span>
+              </button>
+            </li>
+            <li>
+              <button class="sidebar-cat-btn" data-filter="landscape">
+                <span class="sidebar-cat-name">
+                  <span class="cat-dot landscape"></span>
+                  Landscape
+                </span>
+                <span class="sidebar-cat-count">6</span>
+              </button>
+            </li>
+            <li>
+              <button class="sidebar-cat-btn" data-filter="conceptual">
+                <span class="sidebar-cat-name">
+                  <span class="cat-dot conceptual"></span>
+                  Conceptual
+                </span>
+                <span class="sidebar-cat-count">4</span>
+              </button>
+            </li>
+            <li>
+              <button class="sidebar-cat-btn" data-filter="studio">
+                <span class="sidebar-cat-name">
+                  <span class="cat-dot studio"></span>
+                  Studio Notes
+                </span>
+                <span class="sidebar-cat-count">2</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Recent Project -->
+        <div class="sidebar-widget sidebar-widget--project reveal">
+          <span class="sidebar-widget-label">Featured Project</span>
+          <div class="sidebar-project-card">
+            <div class="sidebar-project-img">
+              <img src="images/proj-arch-1.png" alt="Johar Villa Residence" />
+              <div class="sidebar-project-overlay"></div>
+              <span class="sidebar-project-cat">Architecture</span>
+            </div>
+            <div class="sidebar-project-info">
+              <h5>Johar Villa Residence</h5>
+              <p>Lahore, Punjab · 2024 · 4,200 sqft</p>
+              <a href="projects.html" class="btn-ghost btn btn-arrow" style="font-size:0.65rem; letter-spacing:0.12em;">
+                View Project
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tags cloud -->
+        <div class="sidebar-widget reveal">
+          <span class="sidebar-widget-label">Tags</span>
+          <h4 class="sidebar-widget-title">Explore Topics</h4>
+          <div class="sidebar-tags-cloud">
+            <a href="#" class="sidebar-tag">Light &amp; Shadow</a>
+            <a href="#" class="sidebar-tag sidebar-tag--large">Materials</a>
+            <a href="#" class="sidebar-tag">Courtyards</a>
+            <a href="#" class="sidebar-tag sidebar-tag--large">Lahore</a>
+            <a href="#" class="sidebar-tag">Climate Design</a>
+            <a href="#" class="sidebar-tag">Residential</a>
+            <a href="#" class="sidebar-tag sidebar-tag--large">Interior</a>
+            <a href="#" class="sidebar-tag">Sketching</a>
+            <a href="#" class="sidebar-tag">Urban Design</a>
+            <a href="#" class="sidebar-tag">Sustainability</a>
+            <a href="#" class="sidebar-tag sidebar-tag--large">Conceptual</a>
+            <a href="#" class="sidebar-tag">Pakistan</a>
+          </div>
+        </div>
+
+      </aside><!-- /.blog-sidebar -->
+
+    </div><!-- /.blog-layout -->
+  </div>
+</main>
+
+<!-- ================================================
+     NEWSLETTER FULL-WIDTH BANNER
+     ================================================ -->
+<section class="blog-newsletter-banner">
+  <div class="container">
+    <div class="newsletter-banner-inner">
+      <div class="newsletter-banner-text">
+        <div class="section-label reveal"><span>Stay Connected</span></div>
+        <h2 class="reveal reveal-delay-1">
+          Design thinking<br /><em>in your inbox.</em>
+        </h2>
+        <p class="reveal reveal-delay-2">Monthly essays on space, light, culture, and craft — from our studio to yours. No noise. Just ideas worth reading.</p>
+      </div>
+      <form class="newsletter-banner-form reveal reveal-delay-2" id="bannerNewsletterForm">
+        <div class="newsletter-form-group">
+          <input type="text" placeholder="Your name" required />
+          <input type="email" placeholder="Your email address" required />
+        </div>
+        <button type="submit" class="btn btn-primary btn-arrow">
+          Subscribe to the Journal
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+        <p class="newsletter-legal">By subscribing you agree to receive occasional design essays. No spam, ever. Unsubscribe at any time.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     FOOTER (shared)
+     ================================================ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo-main">HumanToSpace</span>
+        <span class="logo-sub">Architecture Studio</span>
+        <p>A Lahore-based architecture and design studio dedicated to shaping spaces where human life flourishes.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social" aria-label="Instagram">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+          </a>
+          <a href="#" class="footer-social" aria-label="LinkedIn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="footer-social" aria-label="Facebook">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="footer-social" aria-label="Behance">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h7.5c2.5 0 4 1.5 4 3.5s-1.5 3.5-4 3.5H3z"/><path d="M3 13h8c2.5 0 4 1.5 4 3.5S13.5 20 11 20H3z"/><line x1="14" y1="4" x2="21" y2="4"/><line x1="14" y1="7" x2="21" y2="7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">Studio</a></li>
+          <li><a href="blog.html">Journal</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Journal</h5>
+        <ul>
+          <li><a href="#">Architecture</a></li>
+          <li><a href="#">Interior Design</a></li>
+          <li><a href="#">Landscape</a></li>
+          <li><a href="#">Conceptual</a></li>
+          <li><a href="#">Studio Notes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Get In Touch</h5>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Johar Town, Lahore, Punjab, Pakistan</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.15h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.29a16 16 0 0 0 5.93 5.93l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16"/></svg>
+          <span>+92 301 8484123</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>office@humantospace.com</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 <a href="index.html">HumanToSpace</a>. All rights reserved.</p>
+      <p style="color:var(--text-dim); font-size:0.75rem;">Johar Town · Lahore · Pakistan</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/blog.js"></script>
+</body>
+</html>

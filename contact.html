@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — HumanToSpace Architecture Studio</title>
+  <meta name="description" content="Get in touch with HumanToSpace Architecture Studio in Lahore. Start your project, ask a question, or visit us in Johar Town." />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Contact-specific extras */
+    .contact-hero-strip {
+      background: var(--accent);
+      padding: 2rem var(--gutter);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .contact-hero-strip span {
+      font-family: var(--font-alt);
+      font-size: 0.68rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--bg);
+    }
+    .contact-hero-strip a {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      color: var(--bg);
+      font-weight: 500;
+      transition: opacity .2s;
+    }
+    .contact-hero-strip a:hover { opacity: 0.7; }
+
+    .contact-info-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      padding: 2.5rem;
+      border-radius: var(--radius);
+      margin-bottom: 1.5rem;
+      transition: border-color var(--transition);
+    }
+    .contact-info-card:hover { border-color: var(--border-gold); }
+    .contact-info-card .card-icon {
+      width: 44px; height: 44px;
+      background: rgba(201,169,110,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+      margin-bottom: 1.2rem;
+    }
+    .contact-info-card h4 {
+      font-family: var(--font-alt);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.6rem;
+    }
+    .contact-info-card p, .contact-info-card a {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: var(--text);
+      line-height: 1.4;
+      display: block;
+      transition: color var(--transition-fast);
+    }
+    .contact-info-card a:hover { color: var(--accent); }
+
+    .form-success {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 2rem;
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius);
+      background: rgba(201,169,110,0.04);
+      gap: 1rem;
+    }
+    .form-success .check-icon {
+      width: 60px; height: 60px;
+      background: rgba(201,169,110,0.12);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+      font-size: 1.5rem;
+    }
+    .form-success h3 {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 300;
+    }
+    .form-success p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      max-width: 380px;
+      line-height: 1.7;
+    }
+
+    .map-container {
+      width: 100%;
+      aspect-ratio: 16/7;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      position: relative;
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      filter: invert(92%) hue-rotate(180deg) brightness(0.9) saturate(0.8);
+      border: 0;
+    }
+    .map-label {
+      position: absolute;
+      top: 1rem; left: 1rem;
+      background: var(--bg);
+      border: 1px solid var(--border-gold);
+      padding: 0.6rem 1rem;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-alt);
+      font-size: 0.62rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      pointer-events: none;
+    }
+
+    .offices-row {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 1px;
+      background: var(--border);
+      margin-top: 5rem;
+    }
+    .office-item {
+      background: var(--bg);
+      padding: 2.5rem;
+      transition: background var(--transition);
+    }
+    .office-item:hover { background: var(--bg-surface); }
+    .office-item .city {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 300;
+      margin-bottom: 0.3rem;
+    }
+    .office-item .country {
+      font-family: var(--font-alt);
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .office-item address {
+      font-style: normal;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+    @media (max-width: 768px) {
+      .offices-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="nav-overlay"></div>
+<nav class="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">Studio</a>
+  <a href="contact.html">Contact</a>
+  <div class="mobile-nav-footer">
+    <p>office@humantospace.com</p>
+    <p>+92 301 8484123</p>
+  </div>
+</nav>
+
+<header id="header">
+  <a href="index.html" class="nav-logo">
+    <span class="logo-main">HumanToSpace</span>
+    <span class="logo-sub">Architecture Studio · Lahore</span>
+  </a>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">Studio</a>
+    <a href="contact.html" class="nav-cta active">Get In Touch</a>
+  </nav>
+  <button class="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- QUICK CONTACT STRIP -->
+<div style="padding-top:80px;">
+  <div class="contact-hero-strip">
+    <span>Direct Contact</span>
+    <a href="tel:+923018484123">+92 301 8484123</a>
+    <a href="mailto:office@humantospace.com">office@humantospace.com</a>
+    <span>Johar Town, Lahore, Pakistan</span>
+  </div>
+</div>
+
+<!-- HERO TITLE -->
+<section style="padding: 6rem var(--gutter) 4rem; max-width: var(--max-w); margin: 0 auto;">
+  <div class="section-label reveal"><span>Let's Talk</span></div>
+  <h1 style="font-family:var(--font-display); font-size:clamp(3.5rem,8vw,8rem); font-weight:300; line-height:0.95; letter-spacing:-0.03em; margin-bottom:1.5rem;" class="reveal">
+    Start Your<br /><em>Project</em>
+  </h1>
+  <p style="font-size:1.05rem; color:var(--text-muted); max-width:520px; line-height:1.9;" class="reveal reveal-delay-1">
+    We'd love to hear about what you're planning. Share your ideas and our team will respond within 24 hours to arrange an initial consultation.
+  </p>
+</section>
+
+<!-- MAIN CONTACT SECTION -->
+<section class="section-sm">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- LEFT: Info -->
+      <div>
+        <div class="contact-info-card reveal">
+          <div class="card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.15h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.29a16 16 0 0 0 5.93 5.93l.95-.95a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16"/></svg>
+          </div>
+          <h4>Phone</h4>
+          <a href="tel:+923018484123">+92 301 8484123</a>
+        </div>
+
+        <div class="contact-info-card reveal reveal-delay-1">
+          <div class="card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <h4>Email</h4>
+          <a href="mailto:office@humantospace.com">office@humantospace.com</a>
+          <a href="mailto:info@humantospace.com" style="font-size:1rem; color:var(--text-muted); margin-top:0.3rem;">info@humantospace.com</a>
+        </div>
+
+        <div class="contact-info-card reveal reveal-delay-2">
+          <div class="card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h4>Studio Address</h4>
+          <p>Johar Town, Lahore<br />Punjab, Pakistan</p>
+        </div>
+
+        <div class="contact-info-card reveal reveal-delay-3">
+          <div class="card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h4>Studio Hours</h4>
+          <p style="font-size:1rem;">Monday – Saturday<br />9:00 AM – 6:00 PM PKT</p>
+        </div>
+      </div>
+
+      <!-- RIGHT: Form -->
+      <div>
+        <div style="margin-bottom:2rem;" class="reveal">
+          <div class="section-label"><span>Send a Message</span></div>
+          <h2 style="font-family:var(--font-display); font-size:clamp(2rem,3.5vw,3.5rem); font-weight:300; line-height:1.1;">
+            Tell us about<br />your <em>vision</em>
+          </h2>
+        </div>
+
+        <!-- Success State -->
+        <div class="form-success" id="formSuccess">
+          <div class="check-icon">✓</div>
+          <h3>Message Sent!</h3>
+          <p>Thank you for reaching out. Our team will review your enquiry and get back to you within 24 hours.</p>
+          <a href="index.html" class="btn btn-outline" style="margin-top:1rem;">Back to Home</a>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form reveal reveal-delay-1" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Muhammad" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Ali" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+92 300 0000000" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service Required *</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a discipline</option>
+              <option value="architecture">Architectural Design</option>
+              <option value="interior">Interior Elegance</option>
+              <option value="landscape">Landscape Design</option>
+              <option value="conceptual">Visionary Concepts</option>
+              <option value="multiple">Multiple Services</option>
+              <option value="other">Not Sure Yet</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="budget">Approximate Budget</label>
+              <select id="budget" name="budget">
+                <option value="" disabled selected>Select range (PKR)</option>
+                <option value="under5m">Under 50 Lakh</option>
+                <option value="5-20m">50 Lakh – 2 Crore</option>
+                <option value="20-50m">2 Crore – 5 Crore</option>
+                <option value="50m+">5 Crore+</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="timeline">Project Timeline</label>
+              <select id="timeline" name="timeline">
+                <option value="" disabled selected>When do you want to start?</option>
+                <option value="asap">As soon as possible</option>
+                <option value="3months">Within 3 months</option>
+                <option value="6months">Within 6 months</option>
+                <option value="year">Within a year</option>
+                <option value="planning">Still planning</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Project Brief *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Describe your project — location, size, requirements, inspiration, or any questions you have for our team…" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-arrow btn-submit" style="width:100%; justify-content:center; padding:1.1rem 2rem;">
+            Send Message
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+
+          <p style="font-size:0.75rem; color:var(--text-dim); text-align:center; margin-top:1rem; line-height:1.6;">
+            We respond to all enquiries within 24 hours during business days. Your information is kept strictly confidential.
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<section class="section-sm">
+  <div class="container">
+    <div class="section-label center reveal"><span>Find Us</span></div>
+    <h2 style="font-family:var(--font-display); font-size:clamp(2rem,4vw,4rem); font-weight:300; text-align:center; margin-bottom:2rem;" class="reveal">
+      Visit Our <em>Studio</em>
+    </h2>
+    <div class="map-container reveal reveal-delay-1">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13615.741578044037!2d74.2810831!3d31.4699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391904f2b8d4d28d%3A0xb4e1cde0dbca86ce!2sJohar%20Town%2C%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1680000000000!5m2!1sen!2s"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="HumanToSpace Studio Location — Johar Town Lahore"
+        allowfullscreen>
+      </iframe>
+      <div class="map-label">HumanToSpace Studio · Johar Town, Lahore</div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFICES / LOCATIONS -->
+<section class="section-sm">
+  <div class="container">
+    <div class="section-label reveal"><span>Where We Work</span></div>
+    <h2 style="font-family:var(--font-display); font-size:clamp(2rem,4vw,4rem); font-weight:300; margin-bottom:2rem;" class="reveal">
+      Our <em>Locations</em>
+    </h2>
+    <div class="offices-row">
+      <div class="office-item reveal">
+        <div class="city">Lahore</div>
+        <span class="country">Pakistan · Headquarters</span>
+        <address>
+          Johar Town<br />
+          Lahore, Punjab<br />
+          Pakistan<br /><br />
+          <a href="tel:+923018484123" style="color:var(--accent);">+92 301 8484123</a>
+        </address>
+      </div>
+      <div class="office-item reveal reveal-delay-1">
+        <div class="city">Islamabad</div>
+        <span class="country">Pakistan · Partner Studio</span>
+        <address>
+          F-7 Sector<br />
+          Islamabad<br />
+          Pakistan<br /><br />
+          <a href="mailto:info@humantospace.com" style="color:var(--accent);">info@humantospace.com</a>
+        </address>
+      </div>
+      <div class="office-item reveal reveal-delay-2">
+        <div class="city">Karachi</div>
+        <span class="country">Pakistan · Consulting</span>
+        <address>
+          DHA Phase VI<br />
+          Karachi<br />
+          Pakistan<br /><br />
+          <a href="mailto:office@humantospace.com" style="color:var(--accent);">office@humantospace.com</a>
+        </address>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo-main">HumanToSpace</span>
+        <span class="logo-sub">Architecture Studio</span>
+        <p>A Lahore-based architecture and design studio dedicated to shaping spaces where human life flourishes.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social" aria-label="Instagram">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg>
+          </a>
+          <a href="#" class="footer-social" aria-label="LinkedIn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="footer-social" aria-label="Facebook">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">Studio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Disciplines</h5>
+        <ul>
+          <li><a href="projects.html">Architecture</a></li>
+          <li><a href="projects.html">Interior Design</a></li>
+          <li><a href="projects.html">Landscape</a></li>
+          <li><a href="projects.html">Conceptual</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Get In Touch</h5>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Johar Town, Lahore, Pakistan</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.15h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.29a16 16 0 0 0 5.93 5.93l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16"/></svg>
+          <span>+92 301 8484123</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>office@humantospace.com</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 <a href="index.html">HumanToSpace</a>. All rights reserved.</p>
+      <p style="color:var(--text-dim); font-size:0.75rem;">Johar Town · Lahore · Pakistan</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

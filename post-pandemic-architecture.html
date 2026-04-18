@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Post Pandemic Architecture Space — HumanToSpace Journal</title>
+  <meta name="description" content="Exploring how architecture must adapt in the post-pandemic world — from the addition of spaces and hierarchy of residential design to communal living and street rethinking. An essay by HumanToSpace." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/blog.css" />
+  <link rel="stylesheet" href="css/post.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛</text></svg>" />
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-logo">HumanToSpace</div>
+  <div class="loader-line"></div>
+</div>
+
+<!-- READING PROGRESS -->
+<div class="reading-progress" id="readingProgress"></div>
+
+<!-- NAV OVERLAY -->
+<div class="nav-overlay"></div>
+
+<!-- MOBILE NAV -->
+<nav class="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">Studio</a>
+  <a href="blog.html" class="active">Journal</a>
+  <a href="contact.html">Contact</a>
+  <div class="mobile-nav-footer">
+    <p>office@humantospace.com</p>
+    <p>+92 301 8484123</p>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header id="header">
+  <a href="index.html" class="nav-logo">
+    <span class="logo-main">HumanToSpace</span>
+    <span class="logo-sub">Architecture Studio · Lahore</span>
+  </a>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">Studio</a>
+    <a href="blog.html" class="active">Journal</a>
+    <a href="contact.html" class="nav-cta">Get In Touch</a>
+  </nav>
+  <button class="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ================================================
+     POST HERO
+     ================================================ -->
+<section class="post-hero" id="postHero">
+  <div class="post-hero-bg">
+    <img src="images/post-pandemic-hero.png" alt="Post Pandemic Architecture — HumanToSpace" loading="eager" />
+  </div>
+  <div class="post-hero-overlay"></div>
+
+  <div class="post-hero-content container">
+    <!-- Back link -->
+    <a href="blog.html" class="post-back-link reveal">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+      Back to Journal
+    </a>
+
+    <div class="post-hero-meta reveal reveal-delay-1">
+      <span class="blog-tag-pill">Conceptual</span>
+      <span class="post-hero-date">Published · March 2021</span>
+      <span class="post-hero-sep">·</span>
+      <span class="post-hero-read">7 min read</span>
+    </div>
+
+    <h1 class="post-hero-title reveal reveal-delay-2">
+      Post Pandemic<br /><em>Architecture Space</em>
+    </h1>
+
+    <p class="post-hero-excerpt reveal reveal-delay-3">
+      How the pandemic permanently reshaped the way we think about residential space — from third-space additions and hierarchy shifts to communal terraces and rethought streets.
+    </p>
+
+    <div class="post-hero-author reveal reveal-delay-3">
+      <div class="blog-author-avatar">MZ</div>
+      <div>
+        <span class="blog-author-name">Muhammad Zubair</span>
+        <span class="blog-author-role">Founder · Principal Architect</span>
+      </div>
+      <div class="post-hero-share">
+        <span class="post-share-label">Share</span>
+        <button class="post-share-btn" aria-label="Share on Twitter" onclick="shareArticle('twitter')">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+        </button>
+        <button class="post-share-btn" aria-label="Copy link" onclick="copyLink()">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Post number badge -->
+  <div class="post-hero-badge">
+    <span class="badge-num">05</span>
+    <span class="badge-label">Essay</span>
+  </div>
+</section>
+
+<!-- ================================================
+     POST BODY — Article + Sidebar TOC
+     ================================================ -->
+<main class="post-main section" id="postBody">
+  <div class="container">
+    <div class="post-layout">
+
+      <!-- ---- LEFT: ARTICLE CONTENT ---- -->
+      <article class="post-article" id="articleContent">
+
+        <!-- Drop Cap Intro -->
+        <div class="post-intro reveal">
+          <p class="post-drop-cap">
+            The pandemic fundamentally altered our relationship with space — where we work, how we isolate, and how we commune with neighbors. In rethinking residential architecture through this lens, new spatial hierarchies emerge that are both pragmatic and deeply human.
+          </p>
+        </div>
+
+        <!-- Section 1 -->
+        <section class="post-section reveal" id="section-addition">
+          <div class="post-section-label">
+            <span class="post-section-num">01</span>
+            <h2>Addition of Spaces</h2>
+          </div>
+          <p>
+            In the post-pandemic world, the addition of some functions at the residential level comes in the form of a <strong>third space</strong>. Social distancing is maintained by incorporating these additional functions. Basically, direct relationships between spaces will be changed into indirect relationships.
+          </p>
+          <p>
+            For example, earlier a lounge had a direct connection with the bedroom. In the post-pandemic world, both spaces have an indirect relationship — you will access the bedroom through a third space. This buffer zone is not merely a corridor; it is a programmatic layer that absorbs social contact before it reaches the intimate core of the home.
+          </p>
+          <div class="post-highlight-box">
+            <div class="post-highlight-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div>
+              <strong>Key Concept</strong>
+              <p>Direct spatial relationships transform into indirect ones through the introduction of transitional third spaces — the fundamental spatial re-ordering of the post-pandemic home.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="post-section reveal" id="section-hierarchy">
+          <div class="post-section-label">
+            <span class="post-section-num">02</span>
+            <h2>Hierarchy of Residential Space</h2>
+          </div>
+          <p>
+            The hierarchy of residential space will change. Extra space is required on a ground surface level — the built area should be less on the ground floor than the unbuilt space included in the circulation space.
+          </p>
+          <p>
+            Under this new arrangement, all house functions are relocated to the first floor. Only three functions remain on the ground floor:
+          </p>
+          <ul class="post-list">
+            <li>
+              <span class="post-list-num">1st</span>
+              <div>
+                <strong>Vertical Access</strong>
+                <p>Providing access to the upper floor where the primary living programme resides.</p>
+              </div>
+            </li>
+            <li>
+              <span class="post-list-num">2nd</span>
+              <div>
+                <strong>Vehicular Porch</strong>
+                <p>A covered zone for automobiles that maintains distance from the primary entry sequence.</p>
+              </div>
+            </li>
+            <li>
+              <span class="post-list-num">3rd</span>
+              <div>
+                <strong>Quarantine Space</strong>
+                <p>A carefully considered zone separating the family area from potential patient zones, with the green area surrounding it enhancing visual connection between space and nature.</p>
+              </div>
+            </li>
+          </ul>
+
+          <blockquote class="post-pullquote">
+            "The quarantine space has a large scale of windows for increasing the transparency of space — this helps minimize the prison feel."
+          </blockquote>
+
+          <p>
+            The green area around the quarantine space enhances the visual connection between space and nature. Large-scale windows increase transparency, minimizing any institutional feel while maintaining necessary separation. The design challenge is to make quarantine dignified rather than punitive.
+          </p>
+        </section>
+
+        <!-- Full-width image -->
+        <figure class="post-image-full reveal">
+          <img src="images/post-pandemic-street.png" alt="Post Pandemic Street and Communal Space Concept" loading="lazy" />
+          <figcaption>Conceptual visualization: Ground-level open circulation with level variations separating vehicular and pedestrian movement</figcaption>
+        </figure>
+
+        <!-- Section 3 -->
+        <section class="post-section reveal" id="section-street">
+          <div class="post-section-label">
+            <span class="post-section-num">03</span>
+            <h2>The Street</h2>
+          </div>
+          <p>
+            In the street it is not easy to maintain social distance because the street forces you to follow a certain path. In the post-pandemic world, the <strong>conventional street concept will end</strong>.
+          </p>
+          <p>
+            When all major residential spaces are lifted from the ground, the ground surface transforms into circulation space — you are no longer forced to follow a specific path. Instead, level variation separates vehicular and pedestrian circulation, creating a liberated ground plane that is simultaneously safer and more communal.
+          </p>
+          <div class="post-stat-grid">
+            <div class="post-stat">
+              <span class="post-stat-num">↑</span>
+              <span class="post-stat-label">Lifted Programme</span>
+              <p>All primary living functions elevated to first floor or above</p>
+            </div>
+            <div class="post-stat">
+              <span class="post-stat-num">↔</span>
+              <span class="post-stat-label">Free Ground Plane</span>
+              <p>Ground becomes open circulation — no forced pedestrian paths</p>
+            </div>
+            <div class="post-stat">
+              <span class="post-stat-num">⊘</span>
+              <span class="post-stat-label">Level Separation</span>
+              <p>Vehicles and pedestrians separated through topographic variation</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 4 -->
+        <section class="post-section reveal" id="section-communal">
+          <div class="post-section-label">
+            <span class="post-section-num">04</span>
+            <h2>Communal Space</h2>
+          </div>
+          <p>
+            The terrace on the porch will shift to the other longer axis of the house. Here, both our terrace and a neighboring house's terrace face each other — and both invite occupants into a semi-enclosed space. This becomes a <strong>communal space between two residences</strong>.
+          </p>
+          <p>
+            If this pattern repeats at the urban scale, it will encourage community living — a network of semi-private shared spaces that weave sociality back into the residential fabric without forcing it. The terrace becomes a space of choice rather than obligation.
+          </p>
+          <div class="post-highlight-box post-highlight-box--amber">
+            <div class="post-highlight-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <div>
+              <strong>Community by Design</strong>
+              <p>When individual terrace patterns are repeated at scale, they organically foster community living — a distributed network of shared thresholds between households.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 5 -->
+        <section class="post-section reveal" id="section-communal-spaces">
+          <div class="post-section-label">
+            <span class="post-section-num">05</span>
+            <h2>Communal Spaces as Pathways</h2>
+          </div>
+          <p>
+            Communal spaces will act as pathways. These spaces have multiple architectural elements that attract people — steps, for instance. But steps and podiums are complex elements in the post-pandemic context, because they invite us to come and sit, to gather, to be proximate.
+          </p>
+          <p>
+            They play a role in starting communication between people. <strong>Ramps are suggested for these spaces</strong> rather than steps, to regulate how people flow through rather than gather statically. Movement replaces congregation; flow replaces occupation.
+          </p>
+          <p>
+            This is not merely a programmatic shift but a philosophical one: architecture shaped not to anchor people in one place but to guide them gently through space while allowing spontaneous encounter to emerge from motion rather than from fixed gathering points.
+          </p>
+        </section>
+
+        <!-- Design Insights Closing -->
+        <section class="post-section post-section--closing reveal" id="section-insights">
+          <div class="post-closing-accent"></div>
+          <h2>Design Insights</h2>
+          <p>
+            The post-pandemic architecture shift is not a temporary response — it is a fundamental re-evaluation of how residential space is stratified, connected, and shared. The pandemic revealed vulnerabilities in our spatial complacency, and the design language that emerges from it should reflect both caution and care.
+          </p>
+          <p>
+            At HumanToSpace, these ideas inform every residential project we undertake — from the way we position the entry sequence to how we create distance between public and private without creating isolation.
+          </p>
+          <div class="post-tags-row">
+            <a href="#" class="blog-inline-tag">Residential</a>
+            <a href="#" class="blog-inline-tag">Post-Pandemic</a>
+            <a href="#" class="blog-inline-tag">Spatial Hierarchy</a>
+            <a href="#" class="blog-inline-tag">Communal Design</a>
+            <a href="#" class="blog-inline-tag">Conceptual</a>
+            <a href="#" class="blog-inline-tag">Urban Living</a>
+          </div>
+        </section>
+
+        <!-- Author Bio -->
+        <div class="post-author-bio reveal">
+          <div class="blog-author-avatar post-author-avatar--lg">MZ</div>
+          <div class="post-author-bio-text">
+            <span class="post-author-bio-label">Written by</span>
+            <h4>Muhammad Zubair</h4>
+            <span class="post-author-bio-role">Founder &amp; Principal Architect · HumanToSpace</span>
+            <p>Muhammad Zubair is the founding architect of HumanToSpace, a Lahore-based architecture and design studio. He leads a multidisciplinary team working across architecture, interior, landscape, and conceptual design.</p>
+          </div>
+        </div>
+
+        <!-- Post Navigation -->
+        <nav class="post-nav reveal">
+          <a href="blog.html" class="post-nav-item post-nav-prev">
+            <span class="post-nav-dir">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+              Previous
+            </span>
+            <span class="post-nav-title">Back to Journal</span>
+          </a>
+          <a href="contact.html" class="post-nav-item post-nav-next">
+            <span class="post-nav-dir">
+              Next Step
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </span>
+            <span class="post-nav-title">Book a Consultation</span>
+          </a>
+        </nav>
+
+      </article>
+
+      <!-- ---- RIGHT: SIDEBAR TOC + WIDGETS ---- -->
+      <aside class="post-sidebar" id="postSidebar">
+
+        <!-- Table of Contents -->
+        <div class="post-toc sidebar-widget reveal" id="tocWidget">
+          <span class="sidebar-widget-label">Contents</span>
+          <h4 class="sidebar-widget-title">In This Essay</h4>
+          <nav class="post-toc-nav" id="tocNav">
+            <a href="#section-addition" class="post-toc-link active" data-section="section-addition">
+              <span class="post-toc-num">01</span>
+              Addition of Spaces
+            </a>
+            <a href="#section-hierarchy" class="post-toc-link" data-section="section-hierarchy">
+              <span class="post-toc-num">02</span>
+              Hierarchy of Residential Space
+            </a>
+            <a href="#section-street" class="post-toc-link" data-section="section-street">
+              <span class="post-toc-num">03</span>
+              The Street
+            </a>
+            <a href="#section-communal" class="post-toc-link" data-section="section-communal">
+              <span class="post-toc-num">04</span>
+              Communal Space
+            </a>
+            <a href="#section-communal-spaces" class="post-toc-link" data-section="section-communal-spaces">
+              <span class="post-toc-num">05</span>
+              Communal Spaces as Pathways
+            </a>
+            <a href="#section-insights" class="post-toc-link" data-section="section-insights">
+              <span class="post-toc-num">06</span>
+              Design Insights
+            </a>
+          </nav>
+          <div class="post-toc-progress">
+            <div class="post-toc-progress-bar" id="tocProgressBar"></div>
+          </div>
+        </div>
+
+        <!-- Article info -->
+        <div class="sidebar-widget reveal">
+          <span class="sidebar-widget-label">About This Essay</span>
+          <div class="post-meta-list">
+            <div class="post-meta-item">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <div>
+                <span class="post-meta-label">Published</span>
+                <span class="post-meta-val">March 2021</span>
+              </div>
+            </div>
+            <div class="post-meta-item">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <div>
+                <span class="post-meta-label">Read Time</span>
+                <span class="post-meta-val">7 min read</span>
+              </div>
+            </div>
+            <div class="post-meta-item">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+              <div>
+                <span class="post-meta-label">Category</span>
+                <span class="post-meta-val">Conceptual Design</span>
+              </div>
+            </div>
+            <div class="post-meta-item">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              <div>
+                <span class="post-meta-label">Views</span>
+                <span class="post-meta-val">1.8k reads</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Newsletter widget -->
+        <div class="sidebar-widget sidebar-widget--newsletter reveal">
+          <div class="newsletter-accent-bar"></div>
+          <span class="sidebar-widget-label">Stay Updated</span>
+          <h3>The HTS <em>Journal</em></h3>
+          <p>Monthly essays on architecture, design thinking, and the future of the built environment — direct to your inbox.</p>
+          <form class="sidebar-newsletter-form" id="sidebarNewsletterForm">
+            <input type="email" placeholder="your@email.com" required />
+            <button type="submit" class="btn btn-primary">
+              Subscribe
+            </button>
+            <p class="newsletter-fine-print">No spam. Unsubscribe anytime.</p>
+          </form>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="sidebar-widget reveal">
+          <span class="sidebar-widget-label">Read More</span>
+          <h4 class="sidebar-widget-title">Related Essays</h4>
+          <div class="post-related-list">
+            <a href="blog.html" class="post-related-item">
+              <div class="post-related-img">
+                <img src="images/proj-arch-1.png" alt="Grammar of Light" loading="lazy" />
+              </div>
+              <div class="post-related-info">
+                <span class="post-related-cat">Architecture</span>
+                <h5>The Grammar of Light: How Shadow Defines Architecture</h5>
+                <span class="post-related-meta">8 min · April 2025</span>
+              </div>
+            </a>
+            <a href="blog.html" class="post-related-item">
+              <div class="post-related-img">
+                <img src="images/proj-concept-1.png" alt="Pakistan 2045" loading="lazy" />
+              </div>
+              <div class="post-related-info">
+                <span class="post-related-cat">Conceptual</span>
+                <h5>Pakistan in 2045: A Speculative Vision for South Asian Architecture</h5>
+                <span class="post-related-meta">10 min · Feb 2025</span>
+              </div>
+            </a>
+            <a href="blog.html" class="post-related-item">
+              <div class="post-related-img">
+                <img src="images/proj-land-1.png" alt="Green Infrastructure" loading="lazy" />
+              </div>
+              <div class="post-related-info">
+                <span class="post-related-cat">Landscape</span>
+                <h5>Green Infrastructure in Pakistani Urban Courtyards</h5>
+                <span class="post-related-meta">6 min · March 2025</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="sidebar-widget post-sidebar-cta reveal">
+          <span class="sidebar-widget-label">Ready to Build?</span>
+          <h4>Shape Your Next Visionary Space</h4>
+          <p>We transform bold ideas into spaces that inspire through architecture, interior, landscaping, and thoughtful design vision.</p>
+          <a href="contact.html" class="btn btn-primary btn-arrow">
+            Book a Consultation
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+
+      </aside><!-- /.post-sidebar -->
+
+    </div><!-- /.post-layout -->
+  </div>
+</main>
+
+<!-- ================================================
+     RELATED ARTICLES (full width)
+     ================================================ -->
+<section class="post-more-articles section-sm">
+  <div class="container">
+    <div class="section-label reveal"><span>Continue Reading</span></div>
+    <h2 class="post-more-title reveal reveal-delay-1">More from the <em>Journal</em></h2>
+
+    <div class="post-more-grid">
+
+      <article class="blog-card blog-card--standard reveal" data-category="architecture">
+        <a href="blog.html" class="blog-card-img-wrap">
+          <img src="images/proj-arch-1.png" alt="Grammar of Light" loading="lazy" />
+          <div class="blog-card-img-overlay"></div>
+          <span class="blog-card-category-pill architecture">Architecture</span>
+        </a>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <time class="blog-card-date">April 5, 2025</time>
+            <span class="blog-card-dot">·</span>
+            <span class="blog-card-read">8 min read</span>
+          </div>
+          <h3 class="blog-card-title">
+            <a href="blog.html">The Grammar of Light: How Shadow Defines Architecture</a>
+          </h3>
+          <p class="blog-card-excerpt">In Lahore's intensely sun-drenched climate, light is not an afterthought — it is the primary building material.</p>
+          <div class="blog-card-footer">
+            <div class="blog-card-author">
+              <div class="blog-author-avatar blog-author-avatar--sm">MZ</div>
+              <span>Muhammad Zubair</span>
+            </div>
+            <a href="blog.html" class="blog-read-link btn-ghost btn btn-arrow">
+              Read
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card blog-card--standard reveal reveal-delay-1" data-category="interior">
+        <a href="blog.html" class="blog-card-img-wrap">
+          <img src="images/proj-int-1.png" alt="Material Memory" loading="lazy" />
+          <div class="blog-card-img-overlay"></div>
+          <span class="blog-card-category-pill interior">Interior</span>
+        </a>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <time class="blog-card-date">March 22, 2025</time>
+            <span class="blog-card-dot">·</span>
+            <span class="blog-card-read">5 min read</span>
+          </div>
+          <h3 class="blog-card-title">
+            <a href="blog.html">Material Memory — Why Texture Outlasts Trend</a>
+          </h3>
+          <p class="blog-card-excerpt">Natural stone, rammed earth, and hand-trowelled plaster carry the weight of time. We examine why tactile materials make interiors more emotionally resonant.</p>
+          <div class="blog-card-footer">
+            <div class="blog-card-author">
+              <div class="blog-author-avatar blog-author-avatar--sm">ZA</div>
+              <span>Zain ul Abidin</span>
+            </div>
+            <a href="blog.html" class="blog-read-link btn-ghost btn btn-arrow">
+              Read
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card blog-card--standard reveal reveal-delay-2" data-category="conceptual">
+        <a href="blog.html" class="blog-card-img-wrap">
+          <img src="images/proj-concept-1.png" alt="Pakistan 2045" loading="lazy" />
+          <div class="blog-card-img-overlay"></div>
+          <span class="blog-card-category-pill conceptual">Conceptual</span>
+        </a>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <time class="blog-card-date">February 28, 2025</time>
+            <span class="blog-card-dot">·</span>
+            <span class="blog-card-read">10 min read</span>
+          </div>
+          <h3 class="blog-card-title">
+            <a href="blog.html">Pakistan in 2045: A Speculative Vision for South Asian Architecture</a>
+          </h3>
+          <p class="blog-card-excerpt">What if Pakistan's mega-cities were designed for climate resilience, cultural memory, and human-scale living?</p>
+          <div class="blog-card-footer">
+            <div class="blog-card-author">
+              <div class="blog-author-avatar blog-author-avatar--sm">BK</div>
+              <span>Bilal Mushtaq Khan</span>
+            </div>
+            <a href="blog.html" class="blog-read-link btn-ghost btn btn-arrow">
+              Read
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     CTA BANNER
+     ================================================ -->
+<section class="post-cta-banner">
+  <div class="container">
+    <div class="post-cta-inner reveal">
+      <div class="post-cta-text">
+        <div class="section-label"><span>Ready to Shape Your Vision?</span></div>
+        <h2>We transform bold ideas into <em>spaces that inspire</em></h2>
+        <p>Through architecture, interior, landscaping, and thoughtful design vision — from cultural context to spaces that inspire and endure.</p>
+      </div>
+      <a href="contact.html" class="btn btn-primary btn-arrow">
+        Book a Consultation
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     FOOTER (shared)
+     ================================================ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo-main">HumanToSpace</span>
+        <span class="logo-sub">Architecture Studio</span>
+        <p>A Lahore-based architecture and design studio dedicated to shaping spaces where human life flourishes.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social" aria-label="Instagram">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+          </a>
+          <a href="#" class="footer-social" aria-label="LinkedIn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="footer-social" aria-label="Facebook">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="footer-social" aria-label="Behance">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h7.5c2.5 0 4 1.5 4 3.5s-1.5 3.5-4 3.5H3z"/><path d="M3 13h8c2.5 0 4 1.5 4 3.5S13.5 20 11 20H3z"/><line x1="14" y1="4" x2="21" y2="4"/><line x1="14" y1="7" x2="21" y2="7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">Studio</a></li>
+          <li><a href="blog.html">Journal</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Journal</h5>
+        <ul>
+          <li><a href="blog.html">Architecture</a></li>
+          <li><a href="blog.html">Interior Design</a></li>
+          <li><a href="blog.html">Landscape</a></li>
+          <li><a href="blog.html">Conceptual</a></li>
+          <li><a href="blog.html">Studio Notes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Get In Touch</h5>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Johar Town, Lahore, Punjab, Pakistan</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.15h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.29a16 16 0 0 0 5.93 5.93l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16"/></svg>
+          <span>+92 301 8484123</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>office@humantospace.com</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 <a href="index.html">HumanToSpace</a>. All rights reserved.</p>
+      <p style="color:var(--text-dim); font-size:0.75rem;">Johar Town · Lahore · Pakistan</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Copy link toast -->
+<div class="post-toast" id="copyToast">
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+  Link copied to clipboard
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/blog.js"></script>
+<script src="js/post.js"></script>
+</body>
+</html>
